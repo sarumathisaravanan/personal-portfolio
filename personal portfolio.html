@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarumathi Saravanan | Front-End Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-brand-600 to-indigo-600 bg-clip-text text-transparent">
+                Sarumathi Saravanan
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition">About</a>
+                <a href="#skills" class="hover:text-brand-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-600 transition">Projects</a>
+                <a href="#education" class="hover:text-brand-600 transition">Education</a>
+                <a href="#contact" class="px-4 py-2 rounded-full bg-brand-600 text-white hover:bg-brand-700 transition">Contact Me</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-600 hover:text-brand-600">About</a>
+            <a href="#skills" class="block text-slate-600 hover:text-brand-600">Skills</a>
+            <a href="#projects" class="block text-slate-600 hover:text-brand-600">Projects</a>
+            <a href="#education" class="block text-slate-600 hover:text-brand-600">Education</a>
+            <a href="#contact" class="block text-brand-600 font-semibold">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-28 pb-20 md:pt-36 md:pb-32 bg-gradient-to-b from-brand-50/50 to-slate-50">
+        <div class="max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
+            <!-- Profile Image -->
+            <div class="mb-6 relative">
+                <div class="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-white shadow-xl shadow-brand-500/20">
+                    <img src="profile.png" alt="Sarumathi Saravanan" class="w-full h-full object-cover object-center">
+                </div>
+            </div>
+            
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold uppercase tracking-wider mb-4">
+                Welcome to my portfolio
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">
+                Hi, I'm <span class="text-brand-600">Sarumathi Saravanan</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-slate-600 mb-6">
+                Front-End Developer
+            </p>
+            <p class="max-w-2xl mx-auto text-slate-600 text-base md:text-lg mb-8">
+                Front-End Developer with hands-on expertise in HTML5, CSS3, JavaScript (ES6+), and React.js. Skilled in building responsive, accessible, and performance-optimized web applications.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-3 rounded-full bg-brand-600 text-white font-medium hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition">
+                    View My Projects
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3 rounded-full bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-100 transition">
+                    Get in Touch
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 mt-8 text-slate-500 text-xl">
+                <a href="https://linkedin.com/in/sarumathi-saravanan-a1b184413" target="_blank" class="hover:text-brand-600 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-brand-600 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:sarumathisaravanan1011@gmail.com" class="hover:text-brand-600 transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">About Me</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-4">Passionate Front-End Developer</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Front-End Developer with hands-on expertise in HTML5, CSS3, JavaScript (ES6+), and React.js. Skilled in building responsive, accessible, and performance-optimized web applications. Proficient at translating UI/UX designs into clean, maintainable code using component-based architecture. Quick learner with strong collaboration skills, eager to contribute to impactful software products.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-slate-700">
+                            <i class="fa-solid fa-location-dot text-brand-600 w-6"></i>
+                            <span>Karur, Tamil Nadu</span>
+                        </div>
+                        <div class="flex items-center text-slate-700">
+                            <i class="fa-solid fa-phone text-brand-600 w-6"></i>
+                            <span>+91 7604834324</span>
+                        </div>
+                        <div class="flex items-center text-slate-700">
+                            <i class="fa-solid fa-envelope text-brand-600 w-6"></i>
+                            <span>sarumathisaravanan1011@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-50 p-8 rounded-2xl border border-brand-100">
+                    <h4 class="text-xl font-semibold text-slate-800 mb-4">What I Bring</h4>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-brand-600 mt-1 mr-3"></i>
+                            <span>Clean, readable code following industry standards.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-brand-600 mt-1 mr-3"></i>
+                            <span>Ability to build front-end apps from scratch layout to API integration.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-brand-600 mt-1 mr-3"></i>
+                            <span>Pixel-perfect UI/UX, accessibility & cross-browser focus.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-brand-600 mt-1 mr-3"></i>
+                            <span>Proactive mindset: takes ownership and delivers on time.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Technical Skills</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Frontend</h3>
+                    <p class="text-sm text-slate-600">HTML5, CSS3, JavaScript (ES6+), React.js</p>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Tools</h3>
+                    <p class="text-sm text-slate-600">Git, GitHub, Visual Studio Code</p>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Core Concepts</h3>
+                    <p class="text-sm text-slate-600">Responsive Design, DOM Manipulation, Event Handling, API Integration, React Hooks, Component Architecture, Cross-Browser Compatibility</p>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Soft Skills</h3>
+                    <p class="text-sm text-slate-600">Agile Teamwork, Code Review, Debugging, Version Control, Technical Documentation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Featured Projects</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-solid fa-globe text-2xl text-brand-600"></i>
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-brand-100 text-brand-700 rounded-full">HTML5 CSS3 JS</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Personal Portfolio Website</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Designed and built a fully responsive portfolio site showcasing skills, projects, and contact information.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 list-disc list-inside">
+                            <li>Mobile-first layout using CSS Flexbox and Grid</li>
+                            <li>JavaScript animations & smooth-scroll interactions</li>
+                            <li>Optimized performance through asset compression</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-solid fa-list-check text-2xl text-brand-600"></i>
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-brand-100 text-brand-700 rounded-full">React.js</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Task Management App</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Feature-rich task manager with create, edit, delete, and filter capabilities.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 list-disc list-inside">
+                            <li>Used useState and useEffect hooks for real-time state</li>
+                            <li>Reusable modular components (TaskCard, FilterBar, Modal)</li>
+                            <li>Responsive CSS for all device types</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fa-solid fa-cloud-sun text-2xl text-brand-600"></i>
+                            <span class="text-xs font-semibold px-2.5 py-1 bg-brand-100 text-brand-700 rounded-full">JavaScript & API</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Weather Application</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Integrated OpenWeatherMap REST API to fetch and display real-time weather data.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 list-disc list-inside">
+                            <li>Async API calls via Fetch API with robust error handling</li>
+                            <li>Dynamic weather icons, temperature, humidity rendering</li>
+                            <li>DOM manipulation without page reloads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Education</h2>
+                <div class="w-16 h-1 bg-brand-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- Edu 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800">B.E. - Electrical & Electronics Engineering</h3>
+                        <p class="text-slate-600 text-sm">M. Kumarasamy College of Engineering, Karur</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 text-right">
+                        <span class="inline-block px-3 py-1 bg-brand-50 text-brand-700 font-semibold text-xs rounded-full">CGPA: 9.046</span>
+                        <p class="text-xs text-slate-500 mt-1">2018 - 2022</p>
+                    </div>
+                </div>
+                <!-- Edu 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800">HSC</h3>
+                        <p class="text-slate-600 text-sm">Vivekanandha HSS, Paundamangalam</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 text-right">
+                        <span class="inline-block px-3 py-1 bg-brand-50 text-brand-700 font-semibold text-xs rounded-full">89.91%</span>
+                        <p class="text-xs text-slate-500 mt-1">2016 - 2018</p>
+                    </div>
+                </div>
+                <!-- Edu 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800">SSLC</h3>
+                        <p class="text-slate-600 text-sm">Govt Girls HSS, Pugalur</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 text-right">
+                        <span class="inline-block px-3 py-1 bg-brand-50 text-brand-700 font-semibold text-xs rounded-full">95.6%</span>
+                        <p class="text-xs text-slate-500 mt-1">2014 - 2016</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Let's Connect</h2>
+            <p class="text-slate-600 mb-8">
+                To secure a Front-End Developer position in a forward-thinking organization where I can apply my expertise in HTML5, CSS3, JavaScript, and React.js.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mb-10">
+                <a href="mailto:sarumathisaravanan1011@gmail.com" class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 text-slate-700 font-medium hover:bg-brand-50 hover:text-brand-600 transition">
+                    <i class="fa-solid fa-envelope"></i> sarumathisaravanan1011@gmail.com
+                </a>
+                <a href="tel:+917604834324" class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 text-slate-700 font-medium hover:bg-brand-50 hover:text-brand-600 transition">
+                    <i class="fa-solid fa-phone"></i> +91 7604834324
+                </a>
+                <a href="https://linkedin.com/in/sarumathi-saravanan-a1b184413" target="_blank" class="flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 text-slate-700 font-medium hover:bg-brand-50 hover:text-brand-600 transition">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 text-slate-400 text-center text-sm">
+        <p>&copy; 2026 Sarumathi Saravanan. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple JS for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
